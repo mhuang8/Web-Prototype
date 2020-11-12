@@ -1,0 +1,56 @@
+
+/* Base Styles*/
+
+html {
+	scroll-behavior: smooth;
+	font-size: 100%;
+}
+
+body {
+}
+
+/* Typography*/
+
+
+/* Navigation*/
+/* Nav bar style inspired by https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  color: #141414;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:#129999;
+  color: white;
+  /* #8fbc4d*/
+}
+
+a.active {
+  background-color: #e0e0e0;
+/* Content Areas*/
+
+
+/* Content*/
+
+
+/* Media Queries*/
+
