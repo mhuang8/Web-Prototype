@@ -7,10 +7,22 @@ html {
 }
 
 body {
+  height: 100%;
+  margin: 0;
 }
 
-/* Typography*/
 
+/* Typography*/
+h1 {
+font-family: 'Futura', sans-serif;
+font-weight: 500;
+font-size: 3.5em;
+}
+
+p {
+font-family: 'Nunito', sans-serif;
+font-size: 1.5em;
+}
 
 /* Navigation*/
 /* Nav bar style inspired by https://www.w3schools.com/css/css_navbar_horizontal.asp*/
@@ -30,6 +42,7 @@ li {
 }
 
 li a {
+  font-family: 'Nunito', sans-serif;
   display: block;
   padding: 8px;
   color: #141414;
@@ -44,8 +57,51 @@ li a:hover {
   /* #8fbc4d*/
 }
 
-a.active {
+.active {
   background-color: #e0e0e0;
+}
+
+/*Hero Image*/
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("Images/beach.jpg");
+  height: 100%;
+  width:100%;
+  padding-top: 250px;
+  padding-bottom:100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+  
+}
+
+.hero-text {
+  text-align: left;
+  color: white;
+  padding-left: 60px;
+}
+
+.hero-text p {
+ margin-top:100px;
+}
+
+.hero-text button {
+ border: none;
+ display: inline-block;
+ margin-top: 10px;
+ padding: 15px 30px;
+ cursor: pointer;
+ font-family: 'Futura', sans-serif;
+ font-size: 1.3em;
+ color: #141414;
+
+}
+
+.hero-text button:hover {
+  background-color: #141414;
+  color: white;
+}
+
 /* Content Areas*/
 
 
