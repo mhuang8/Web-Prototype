@@ -9,148 +9,267 @@ html {
 body {
   height: 100%;
   margin: 0;
-	display: grid;
-  grid-template-columns: 0.4fr 1.6fr;
+  font-family: 'Rubik', sans-serif;
+  color: #242424;
+  /* Up to you if you want to use grid or not */
+  
+	/* display: grid;
   
 	grid-template-areas: 
-  "header header"
-  "main main"
-  "footer footer";
+  "header"
+  "main"
+  "footer"; */
 }
-
-
 
 /*--------------Typography--------------*/
 h1 {
-font-family: 'Futura', sans-serif;
-font-weight: 500;
-font-size: 3.5em;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  line-height: 1.7em;
+  font-size: 3.7em;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.4em;
+}
+
+h3{
+  font-weight: 600;
+  font-size: 1.5em;
+ 
 }
 
 p {
-font-family: 'Nunito', sans-serif;
-font-size: 1.5em;
-}
-
-
-/* --------------Navigation--------------*/
-header { 
-  grid-area: header; 
-}
-/* Nav bar style inspired by https://www.w3schools.com/css/css_navbar_horizontal.asp*/
-nav{
-  width: 100%;
-  height: 90px;
-  background-color: white;
-  position: fixed;
-  margin:0;
-}
-
-.logo {
-  display: inline-block;
-  height: 60px;
-  margin: 15px 20px;
-  
-}
-
-ul {
-  display: inline-block;
-  list-style-type: none;
-  margin:0px;
-  overflow: hidden;
-  width:80%
-}
-
-li {
-  float: left;
-}
-
-li a {
   font-family: 'Nunito', sans-serif;
-  text-decoration: none;
-  display: inline-block;
-  color: #141414;
-  text-align: center;
-  padding: 30px 20px;
-
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height:1.5em;
 }
 
-li a:hover {
-  background-color:#129999;
+button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 1em;
+}
+
+ol{
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height:1.5em;
+}
+
+a{
   color: white;
-  /* #8fbc4d*/
+  text-decoration: none;
 }
 
-.active {
-  background-color: #e0e0e0;
-}
 
-/*Join button in nav bar*/
-.nav-button a {
-  background-color: #8fbc4d;
-  border: 0.2px solid #8fbc4d ;
-  border-radius: 30px;
-  color:  white;
-  padding: 15px 30px;
-  margin: 15px;
-
-  
-}
-.nav-button a:hover {
-  border: 0.2px solid #129999;
-
-}
-
-/*--------------Main Content--------------*/
-main { 
-  grid-area: main; 
-}
+/*--------------Hero Image: Home--------------*/
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("Images/beach.jpg");
-  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("Images/beach.png");
+  /*background-image: url("Images/step-up.png");*/
   width:100%;
-  padding-top: 250px;
-  padding-bottom:100px;
+  height: auto;
+  padding-top: 200px;
+  padding-bottom:120px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: static;
-  
 }
 
 .hero-text {
   text-align: left;
   color: white;
+  padding: 0px 100px;
+  text-shadow: 2px 2px 15px rgb(85, 85, 85);
 }
 
 .hero-text p {
  margin-top:100px;
+ font-size: 1.3em;
 }
 
 .hero-text button {
  border: none;
  display: inline-block;
  margin-top: 10px;
- padding: 15px 30px;
+ padding: 20px 30px;
  cursor: pointer;
- font-family: 'Futura', sans-serif;
- font-size: 1.3em;
- color: #141414;
+ background-color: white;
+ color: #242424;
  border-radius: 30px;
 }
 
 .hero-text button:hover {
-  background-color: #141414;
+  background-color: #242424;
   color: white;
 }
 
-footer { 
-  grid-area: footer; 
+/*--------------Main Content--------------*/
+section {
+  padding: 30px 100px;
+}
+
+section:nth-of-type(2n){
+  background: #f0f0f0;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  background-color: #242424;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 0px;
+}
+
+button:hover{
+  
+}
+/*--------------Home page--------------*/
+/*---mission----*/
+.mission-col{
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px 0px;
+  width: 500px;
 }
 
 
-/* Content (figure, iframe, img)*/
+/*---help----*/
+div.icon-col{
+  display: inline-block;
+  width: 250px;
+  padding: 0px 25px;
+}
+
+/*--------------About page--------------*/
+#hero-about{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("Images/ocean.jpg");
+  width:100%;
+  height: auto;
+  padding-top: 90px;
+  padding-bottom:30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+#hero-about-text{
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 15px rgb(85, 85, 85);
+}
+
+/*--------------Clean Up page--------------*/
+#hero-clean{
+  background-image:  url("Images/raffle.png");
+  width:100%;
+  height: auto;
+  padding-top: 150px;
+  padding-bottom:60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+#hero-clean-text{
+  text-align: center;
+  color: #242424;
+  font-size: 80%
+}
+
+.steps{
+  float: none;
+}
+
+#button-row{
+  width:50%;
+  margin: 0 auto;
+}
+
+#button-wrap{
+  display: inline-block;
+}
+
+.button-element{
+  margin: 0 10px;
+  width: 230px;
+  height: 100px;
+}
+
+.img-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.img-column {
+  display:block;
+  
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*--form--*/
+label {
+  display:block;
+  margin-top: 10px;
+  font-size: 1.12em; 
+  font-weight:400;
+  color: #242424;
+}
+
+.checkbox{
+  display: block;
+  font-size:0.8em;
+  font-weight: 200;
+}
+
+.description{
+  font-size: 0.9em;
+  color: #464646;
+}
+
+textarea{
+  margin-top: 10px;
+}
+::placeholder{
+  font-family: 'Rubik', sans-serif;
+}
+
+.consent{
+  display: inline-block;
+}
+
+input {
+  margin: 4px 0px;
+  
+}
+
+input:focus {
+  border: 2px solid blue
+}
+
+#form-button{
+  padding: 20px 60px;
+}
+
+#form-box{
+  background-color: white;
+  border-radius: 20px;
+  padding:10px 40px;
+}
+
+/*-------------Content (figure, iframe, img)-------------*/
 
 
 /* Media Queries*/

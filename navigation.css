@@ -1,0 +1,112 @@
+/* --------------Navigation--------------*/
+header { 
+  grid-area: header; 
+}
+/* Nav bar style inspired by https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+nav{
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  position: fixed;
+  padding:5px 60px;
+  
+}
+
+.logo {
+  display: inline-block;
+  height: 55px;
+  margin: 15px 0px;
+  
+}
+
+ul {
+  display: inline-block;
+  width: calc(100% - 300px);
+  list-style-type: none;
+  margin:0px;
+  margin-left: 20px;
+  position: relative;
+  padding:0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  display: inline-block;
+  color: #141414;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 30px 25px;
+
+}
+
+li a:hover {
+  color: rgb(99, 99, 99);
+}
+
+.active {
+  color:#008383;
+}
+
+/*Join button in nav bar*/
+.nav-button {
+  position: absolute;
+  right: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.nav-button a {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  border: 3px solid #242424;
+  background-color: #242424;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 25px;
+  margin: 15px;
+  
+}
+.nav-button a:hover {
+  border: 3px solid #242424;
+  background-color: white;
+  color: #242424;
+
+}
+
+@media screen and (max-width: 580px) {
+  .logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  nav {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    position: static;
+  }
+  ul {
+    display: block;
+    width: 100%;
+    background-color: white;
+  }
+
+  li{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-button {
+    position: static;
+  }
+
+
+}

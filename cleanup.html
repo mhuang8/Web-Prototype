@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Clean Up Australia</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="navigation.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://use.typekit.net/uop2sjm.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<!--support page-->
+
+<body>
+	<header>
+		<nav>
+			<img class="logo" src="Images/logo.png">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="cleanup.html">Clean Up</a></li>
+        <li class="nav-button"><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="hero-clean">
+      <div id="hero-clean-text">
+        <h1>Clean & Green<br> Raffle</h1>
+      </div>
+    </div>
+
+    <section>
+      <div>
+        <h2>Clean up for a chance to win!</h2>
+        <p>The Clean & Green Raffle is the perfect opportunity to get outdoors and do something positive for the environment in a socially responsible way. With no one to do Clean-Ups over the recent months, there has been an increase in rubbish around the neighbourhood. With some friends or family, you can get some physical exercise while cleaning some rubbish around your local area for a chance to win some great waste-free, eco-friendly prizes!</p>
+        <p>We have partnered with Kappi Australia to bring you a chance to win high quality, re-usable and sustainable products to help you stay green. Join now and gain a chance to win 1 in 5 of their Zero Waste Lifestyle Packs along with a $20 Kappi e-gift card!</p>
+        <!-- image from https://www.kappi.com.au/products/zero-waste-lifestyle-gift-pack-limited-edition?variant=32585155149884-->
+        <figure>
+          <img src="Images/kappi.jpg" alt="Kappi Australia waste-free products" width="400px">
+          <figcaption>
+            <center>Pack includes Kappi Water Bottle in Arctic White (600mL), Bamboo Reusable Cutlery + 2 Gold Straws, Organic Cotton Mesh Produce Bags (3-Pack), Organic Cotton Grocery Bags (2-Pack), Organic Cotton Bulk Food Bags (3-Pack), 500ml Reusable Ziplock Bags (3-Pack) <center>
+          </figcaption>
+        </figure>
+      
+        <h3>How To Enter</h3>
+          <ol>
+            <li class="steps">Simply participate in a Clean-Up event and take a photo of yourself outside with your cleaned rubbish.</li>
+            <li class="steps">Submit your photo and report your cleanup in the form below to be entered into the raffle! </li>
+          </ol>
+          <p>Help us achieve the goal of 500 participants which to help make a positive impact on the Australian environment. Everyone has the opportunity to be a featured Community Hero, and inspire others to join in!</p>
+          <p>If you are unable to participate under current circumstances but still wish to join in and contribute, you can opt to make a donation instead. A donation of $25 or more will automatically place you into the raffle for a chance to win! All donations will go towards Clean Up Australia activities, and enable Clean Up Australia to provide educational resources and clean up materials free of charge to schools and youth groups, educating the next generation on the importance of protecting and caring for the environment. </p>
+          <div id="button-row">
+            <div id="button-wrap">
+              <button class="button-element"><a href="about.html">Start a Clean-Up</a></button>
+            </div>
+            <div id="button-wrap">
+              <button class="button-element"><a href="about.html">Donate</a></button>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="enter-form">
+      <h2>Enter Now</h2>
+      <p>Complete this form after you have completed a Clean-Up to enter the raffle.</p>
+      <div id ="form-box"
+        <form id="enter">
+          <h3>Personal Details</h3>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+            
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+              
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required>
+
+          <h3>Report your Clean-Up</h3>
+            <div>
+              <label for="date">Date of Clean-Up</label>
+              <input id="date" name="date" type="date" required>
+            
+              <label for="city">City</label>
+              <input id="city" name="city" type="city" required>
+              
+              <label for="state">State</label>
+              <input id="state" name="state" type="state" required>
+
+              <label for="zip">Postcode</label>
+              <input id="zip" name="zip" type="number" min ="0" max="9999" required>
+
+              <label for="site"> Clean-Up Site 
+                <div class ="checkbox">
+                  <label>
+                    <input id="cb1" name="checkboxGroup"  type="checkbox" value="park" required>Park
+                  </label>
+                </div>
+                <div class ="checkbox">
+                  <label>
+                    <input id="cb2" name="checkboxGroup" type="checkbox" value="river" required>River/Creek
+                  </label>
+                </div>
+                <div class ="checkbox">
+                  <label>
+                    <input id="cb3" name="checkboxGroup" type="checkbox" value="beach" required>Beach/Coastal
+                  </label>
+                </div>
+                <div class ="checkbox">
+                  <label>
+                    <input id="cb4" name="checkboxGroup" type="checkbox" value="bush" required>Bushland
+                  </label>
+                </div>
+                <div class ="checkbox">
+                  <label>
+                    <input id="cb5" name="checkboxGroup" type="checkbox" value="road" required>Roadside
+                  </label>
+                </div>
+                <div class ="checkbox">
+                  <label>
+                    <input id="cb5" name="checkboxGroup" type="checkbox" value="school" required>School
+                  </label>
+                </div>
+                <div class ="checkbox">
+                  <label>
+                    <input id="cb5" name="checkboxGroup" type="checkbox" value="other" required>Other
+                  </label>
+                </div>
+              </label>
+            </div>
+
+          <h3>Share your experience</h3>
+            <div>
+              <label for="file">Photo</label>
+              <div class="description"> Upload a photo of yourself during your Clean-Up experience / with your cleaned rubbish </div>
+              <input id="file" name="file" type="file" required>
+            </div>
+            <div>
+              <label for "message">Message</label>
+              <div class="description">Write a short message about your goals/motivations/reasons for participating that may help inspire others to join</div>
+              <textarea id="message" name="message" type="textarea" cols ="50" rows="3" required></textarea>
+            </div>
+            <div>
+              <label>Do you agree to be featured in our Community Heroes section below? (with your photo and message)</label>
+                <label class="consent" for ="yes">
+                  <input id="yes" name="yesorno" type="radio" value = "yes" required> Yes 
+                </label>
+                <label class="consent" for ="no">
+                  <input id="no" name="yesorno" type="radio" value = "no" required> No
+              </label>
+            <div>
+              <label for "comments">Comments (optional)</label>
+              <textarea id="comments" name="comments" placeholder="Describe your Clean Up experience or any additional comments" type="text" cols="50" rows="6" ></textarea>
+            </div>
+          <button id="form-button" type="submit">Enter</button>
+        </div>
+      </form>
+    </section>
+    <section>
+      <div>
+        <h2>Our Community Heroes</h2>
+        <p>Read the experiences and messages of our Clean-Up participants who have contributed positively to our community. Enter now to share you own! </p>
+        <div class="img-grid">
+          <div class="img-column">
+            <img src="Images/ch1.png" alt="volunteer, boy" width="300px">
+            <img src="Images/ch4.png" alt="volunteer, 2 boys" width="300px">
+            <img src="Images/ch7.png" alt="volunteer,man" width="300px">
+          </div>
+          <div class="img-column">
+            <img src="Images/ch2.png" alt="volunteer" width="300px">
+            <img src="Images/ch5.png" alt="volunteer" width="300px">
+            <img src="Images/ch8.png" alt="volunteer" width="300px">
+          </div>
+          <div class="img-column">
+            <img src="Images/ch3.png" alt="volunteer" width="300px">
+            <img src="Images/ch6.png" alt="volunteer" width="300px">
+            <img src="Images/ch9.png" alt="volunteer" width="300px">
+          </div>
+        </div>
+
+
+        
+      </div>
+    
+    </section>
+  </main>
+
+	<!-- FOOTER -->
+	<footer>
+	</footer>
+	<script src="script.js">
+	</script>
+</body>
+
+</html>

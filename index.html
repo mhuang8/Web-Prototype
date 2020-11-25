@@ -6,39 +6,89 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Clean Up Australia</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+  <link href="navigation.css" rel="stylesheet" type="text/css" /> 
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://use.typekit.net/uop2sjm.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 
+<!--landing page-->
 <body>
   <header>
     <nav>
       <img class="logo" src="Images/logo.png">
-      <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#cleanup">Clean Up</a></li>
-        <li class="nav-button" style="float:right"><a href="#join">Join</a></li>
+      <ul >
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cleanup.html">Clean Up</a></li>
+        <li class="nav-button"><a href="join.html">Join</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-	<div class="hero-image">
-		<div class="hero-text">
-			<h1>Help Make Australia Beautiful Again</h1>
-			<p>Together, we can clean up Australia.</p>
-			<button>Start Today</button>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Help Make Australia Beautiful Again</h1>
+        <p>Together, we can clean up Australia.</p>
+        <button>Start A Clean-Up</button>
+      </div>
     </div>
-  </div>
   
+    <section id="mission">
+      <div class = "row-element"> 
+        <figure class= "mission-col">
+          <img src="Images/australia-icon.png" alt="Australia icon" width="400px">
+        </figure> 
+        <div class ="mission-col">
+          <h2>Our Mission</h2>
+          <p>Our mission is to inspire and empower communities to reduce the environmental impacts of waste in Australia, and contribute to a cleaner, greener world. We motivate Australians to clean up, reduce waste, and conserve our precious environment.</p>
+          <button><a href="about.html">Learn More</a></button>
+      <div class = "row-element"> 
+    </section>
 
-    <h2>Our Mission</h2>
-    <p> Our mission is to inspire and empower communities to reduce the environmental impacts of waste in Australia. </p>
+    <section id="help">
+      <div class = "row-element">
+        <h2>How You Can Help</h2>
+        <div class = "icon-col">
+          <h3>Clean Up</h3>
+          <p>Clean up rubbish in your local areas through our Clean-Up events</p>
+        </div>
+        <div class = "icon-col">
+          <figure>
+            <img src="Images/icon-reduce.png" alt="Australia icon" width="200px">
+          </figure> 
+          <h3>Reduce</h3>
+          <p>Learn how to reduce your waste with our sustainable living tips and ideas.</p>
+        </div>
+        <div class = "icon-col">
+          <h3>Raise Awareness</h3>
+          <p>Help raise awareness about Clean Up Australia and our cause.</p>
+        </div>
+        <div class = "icon-col">
+          <h3>Join</h3>
+          <p>Join our community to support us and keep up to date with the latest news.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="event">
+      <h2>Clean Round-the-Block Raffle</h2>
+      <p>Want to get involved and volunteer around your local area? Join our Clean Round-the-Block Raffle for a chance to win some amazing prizes, while enjoying the fresh outdoors air!</p>
+    </section>
+
+    <section id="join">
+      <h2>Join Our Community</h2>
+      <p>Sign up today and join other Australians in the journey to making Australia a cleaner place.</p>
+      <button>Join Now</button>
+    </section>
+  
   </main>
 
 	<!-- FOOTER -->
 	<footer>
+
 	</footer>
 	<script src="script.js">
 	</script>
