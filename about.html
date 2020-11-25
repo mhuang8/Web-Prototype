@@ -5,26 +5,37 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Clean Up Australia</title>
+  <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
 	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link href="navigation.css" rel="stylesheet" type="text/css" />
+  <link href="navigation.css" rel="stylesheet" type="text/css" /> 
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
-	<link href="https://use.typekit.net/uop2sjm.css">
-	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://use.typekit.net/uop2sjm.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 
-
-<!--About-->
-
+<!-about page-->
 <body>
-	<header>
-		<nav>
-			<img class="logo" src="Images/logo.png">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="about.html">About</a></li>
-        <li><a href="cleanup.html">Clean Up</a></li>
-        <li class="nav-button"><a href="join.html">Join</a></li>
-      </ul>
+  <header>
+    <nav>
+      <img class="logo" src="Images/logo.png">
+      <div class ="topnav"  id="myTopnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">Clean Up</button>
+          <div class="dropdown-content">
+            <a href="start-cleanup.html">Start a Clean Up</a>
+            <a href="raffle.html">Raffle</a>
+          </div>
+        </div>
+        <div class="nav-button">
+        <a href="join.html">Join</a>
+          <!--<button class="nav-button"><a href="join.html">Join</a></button>-->
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
     </nav>
   </header>
 
@@ -66,22 +77,23 @@
         </figure> 
 
         <h2>What We've Achieved</h2>
-        <div class = "row-element">
+        <div class = "icon-row">
           <div class = "icon-col">
+            <img src="Images/icon5.png" alt="icon, cleaning" width="180px">
             <h3>18.3+</h3>
             <p>Australians have donated their time as part of Clean Up Australia activities over the last 30 years.</p>
           </div>
           <div class = "icon-col">
-            <figure>
-              <img src="Images/icon-reduce.png" alt="Australia icon" width="200px">
-            </figure> 
+            <img src="Images/icon6.png" alt="icon, plant and clock" width="180px">
             <h3>36 million hours</h3>
             <p>Of volunteer time has been donated to Clean-Up activities to benefit our environment.</p>
           </div>
           <div class = "icon-col">
+            <img src="Images/icon7.png" alt="icon, rubbish truck" width="180px">
             <h3>380 000+</h3>
             <p>Ute loads of rubbish have been removed as part of Clean Up Australia activities.</p>
           </div>
+        </div>
       </div>
 
     </section>

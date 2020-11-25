@@ -5,25 +5,39 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Clean Up Australia</title>
+	<link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
 	<link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="navigation.css" rel="stylesheet" type="text/css" /> 
+	<link href="navigation.css" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
-  <link href="https://use.typekit.net/uop2sjm.css">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://use.typekit.net/uop2sjm.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
 
 </head>
 
 <!--landing page-->
+
 <body>
-  <header>
-    <nav>
-      <img class="logo" src="Images/logo.png">
-      <ul >
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="cleanup.html">Clean Up</a></li>
-        <li class="nav-button"><a href="join.html">Join</a></li>
-      </ul>
+	<header>
+		<!--nav referenced from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp-->
+		<nav>
+			<img class="logo" src="Images/logo.png">
+      <div class ="topnav"  id="myTopnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">Clean Up</button>
+          <div class="dropdown-content">
+            <a href="start-cleanup.html">Start a Clean Up</a>
+            <a href="raffle.html">Raffle</a>
+          </div>
+        </div>
+        <div class="nav-button">
+        <a href="join.html">Join</a>
+          <!--<button class="nav-button"><a href="join.html">Join</a></button>-->
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
     </nav>
   </header>
 
@@ -52,21 +66,22 @@
       <div class = "row-element">
         <h2>How You Can Help</h2>
         <div class = "icon-col">
+          <img src="Images/icon1.png" alt="icon, rubbish" width="180px">
           <h3>Clean Up</h3>
           <p>Clean up rubbish in your local areas through our Clean-Up events</p>
         </div>
         <div class = "icon-col">
-          <figure>
-            <img src="Images/icon-reduce.png" alt="Australia icon" width="200px">
-          </figure> 
+          <img src="Images/icon2.png" alt="icon, waste-free" width="180px">
           <h3>Reduce</h3>
           <p>Learn how to reduce your waste with our sustainable living tips and ideas.</p>
         </div>
         <div class = "icon-col">
+          <img src="Images/icon3.png" alt="icon, megaphone" width="180px">
           <h3>Raise Awareness</h3>
           <p>Help raise awareness about Clean Up Australia and our cause.</p>
         </div>
         <div class = "icon-col">
+          <img src="Images/icon4.png" alt="icon, people" width="180px">
           <h3>Join</h3>
           <p>Join our community to support us and keep up to date with the latest news.</p>
         </div>
@@ -75,16 +90,22 @@
 
     <section id="event">
       <div class = "row-element"> 
-        <h2>Clean Round-the-Block Raffle</h2>
-        <p>Want to get involved and volunteer around your local area? Join our Clean Round-the-Block Raffle for a chance to win some amazing prizes, while enjoying the fresh outdoors air!</p>
+        <h2>Clean & Green Raffle</h2>
+        <img src="Images/raffle2.png" alt="raffle illustration" width="400px">
+        <p>Want to get involved and volunteer around your local area? Join our Clean & Green Raffle for a chance to win some amazing prizes, while enjoying the fresh outdoors air!</p>
       <div class = "row-element"> 
     </section>
 
     <section id="join">
       <div class = "row-element"> 
-        <h2>Join Our Community</h2>
-        <p>Sign up today and join other Australians in the journey to making Australia a cleaner place.</p>
-        <button>Join Now</button>
+        <div class = "join-col">
+          <h2>Join Our Community</h2>
+          <p>Sign up today and join other Australians in the journey to making Australia a cleaner place.</p>
+          <button>Join Now</button>
+        </div>
+        <div class = "join-col">
+          <img src="Images/community.jpg" alt="raffle illustration" width="450px">
+        </div>
       <div class = "row-element"> 
     </section>
   

@@ -138,8 +138,7 @@ button:hover{
   width:100%;
   max-width:1400px;
   margin: 0 auto;
-  
-  
+ 
 }
 .mission-col{
   display: inline-block;
@@ -149,8 +148,11 @@ button:hover{
 
 
 /*---help----*/
+
+
 div.icon-col{
   display: inline-block;
+  vertical-align: top;
   width: 250px;
   padding: 0px 25px;
 }
@@ -170,6 +172,11 @@ div.icon-col{
   text-align: center;
   color: white;
   text-shadow: 2px 2px 15px rgb(85, 85, 85);
+}
+
+.icon-row{
+  display: flex;
+  justify-content: center;
 }
 
 /*--------------Clean Up page--------------*/
@@ -216,7 +223,6 @@ div.icon-col{
 }
 
 .img-column {
-  
   
 }
 
@@ -272,7 +278,7 @@ input:focus {
 #form-box{
   background-color: white;
   border-radius: 20px;
-  padding:10px 40px;
+  padding:10px 50px;
 }
 
 /*-------------Content (figure, iframe, img)-------------*/
