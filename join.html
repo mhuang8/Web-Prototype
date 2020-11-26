@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Clean Up Australia</title>
+  <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="navigation.css" rel="stylesheet" type="text/css" /> 
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://use.typekit.net/uop2sjm.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<!--join page-->
+<body>
+  <header>
+    <nav>
+      <img class="logo" src="Images/logo.png">
+      <div class ="topnav"  id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">Clean Up</button>
+          <div class="dropdown-content">
+            <a href="cleanup.html">Participate in a Clean Up</a>
+            <a href="raffle.html">Clean & Green Raffle</a>
+          </div>
+        </div>
+        <div class="nav-button">
+        <a href="join.html">Join</a>
+          <!--<button class="nav-button"><a href="join.html">Join</a></button>-->
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class ="main-bg">
+      <section>
+      <div class = "row-element"> 
+      <h1>Join Our Community</h1>
+      <p>Join us today in our mission to create a cleaner world.</p>
+      <div id ="form-box"
+        <form id="join">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+            
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+              
+            <label for="phone">Mobile Number</label>
+            <input id="phone" name="phone" type="tel" required>
+
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required>
+
+            <label for="password">Confirm Password</label>
+            <input id="password" name="password" type="password" required>
+
+            <label for="DOB">Date of Birth</label>
+            <input id="DOB" name="DOB" type="date" required>
+
+                <div class ="checkbox">
+                  <label>
+                    <input id="yes" name="yes"  type="checkbox" value="yes" required>Opt into our newsletter to keep up to date with the latest news, events and exclusive stories.
+                  </label>
+                </div>
+         
+          <button id="form-button" type="submit">Enter</button>
+        </div>
+      </form>
+      </div>
+    </section>
+
+    </div>
+  </main>
+
+ <footer>
+ </footer>
+ <script src="script.js"></script>
+
+</body>

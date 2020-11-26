@@ -21,12 +21,12 @@
       <img class="logo" src="Images/logo.png">
       <div class ="topnav"  id="myTopnav">
         <a href="index.html">Home</a>
-        <a class="active" href="about.html">About</a>
+        <a href="about.html">About</a>
         <div class="dropdown">
-          <button class="dropbtn">Clean Up</button>
+          <button class="dropbtn active">Clean Up</button>
           <div class="dropdown-content">
-            <a href="start-cleanup.html">Start a Clean Up</a>
-            <a href="raffle.html">Raffle</a>
+            <a href="cleanup.html">Participate in a Clean Up</a>
+            <a href="raffle.html">Clean & Green Raffle</a>
           </div>
         </div>
         <div class="nav-button">
@@ -39,9 +39,16 @@
   </header>
 
   <main>
-    <div id="hero-clean">
-      <div id="hero-clean-text">
+    <div id="hero-raffle">
+      <div id="hero-raffle-text">
         <h1>Clean & Green<br> Raffle</h1>
+      </div>
+    </div>
+    <div id ="progress-box">
+      <h3 id ="participants">Participants</h3>
+      <h3 id ="goal">Goal<br> 500</h3>
+      <div id="bar">
+        <div id="progress"></div>
       </div>
     </div>
 
@@ -89,7 +96,7 @@
             <label for="email">Email</label>
             <input id="email" name="email" type="email" required>
               
-            <label for="phone">Phone</label>
+            <label for="phone">Mobile Number</label>
             <input id="phone" name="phone" type="tel" required>
 
           <h3>Report your Clean-Up</h3>

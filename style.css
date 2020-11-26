@@ -1,6 +1,5 @@
 
 /*--------------Base Styles--------------*/
-
 html {
 	scroll-behavior: smooth;
 	font-size: 100%;
@@ -9,6 +8,7 @@ html {
 body {
   width:100%;
   height: 100%;
+  max-width: 100%;
   margin: 0 auto;
   font-family: 'Rubik', sans-serif;
   color: #242424;
@@ -21,6 +21,7 @@ body {
   "main"
   "footer"; */
 }
+
 
 /*--------------Typography--------------*/
 h1 {
@@ -77,6 +78,7 @@ a{
   height: auto;
   padding-top: 200px;
   padding-bottom:120px;
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,7 +87,7 @@ a{
 
 .hero-text {
   color: white;
-  padding: 0px 100px;
+  padding: 0px 150px;
   text-shadow: 2px 2px 15px rgb(85, 85, 85);
 }
 
@@ -132,29 +134,62 @@ button{
 button:hover{
   
 }
+
+img.picture{
+  width:400px;
+}
+
+img.icon{
+  width:180px;
+}
+
+iframe{
+ width: 560px;
+ height:315px;
+ margin: 0 auto;
+}
 /*--------------Home page--------------*/
 /*---mission----*/
 .row-element{
   width:100%;
-  max-width:1400px;
+  max-width:1700px;
   margin: 0 auto;
  
 }
-.mission-col{
+.col{
   display: inline-block;
-  margin: 20px 10px;
-  width:500px;
+  margin: 20px 50px;
+  width:40%;
+  
+  vertical-align: top;
+  
+}
+.full-col{
+  margin: 0px 50px;
+  width:90%;
+  vertical-align: top;
 }
 
+figure.col{
+  text-align: center;
+}
 
 /*---help----*/
+#icon-container{
+  padding:0 50px; 
+}
 
-
-div.icon-col{
+.icon-col{
   display: inline-block;
   vertical-align: top;
-  width: 250px;
-  padding: 0px 25px;
+  width: 18%;
+  padding: 0px 32px;
+}
+
+.column-container{
+  width:500px;
+  display: inline-block;
+  padding:0 50px; 
 }
 
 /*--------------About page--------------*/
@@ -166,6 +201,7 @@ div.icon-col{
   padding-bottom:30px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   
 }
 #hero-about-text{
@@ -179,8 +215,46 @@ div.icon-col{
   justify-content: center;
 }
 
-/*--------------Clean Up page--------------*/
+.text-middle{
+  text-align: center;
+  margin: 20px 200px;
+  height:100%;
+  
+  
+}
+
+.icon-col2{
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  padding: 0 32px;
+}
+
+#image-story{ 
+  vertical-align: center;
+  width:100%;
+ 
+  }
+
+/*--------------clean page--------------*/
 #hero-clean{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/cleanup.jpg");
+  width:100%;
+  height: auto;
+  padding-top: 150px;
+  padding-bottom:60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+#hero-clean-text{
+  text-align: center;
+  color: white;
+  font-size: 80%
+}
+/*--------------raffle page--------------*/
+#hero-raffle{
   background-image:  url("Images/raffle.png");
   width:100%;
   height: auto;
@@ -188,12 +262,60 @@ div.icon-col{
   padding-bottom:60px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   
 }
-#hero-clean-text{
+#hero-raffle-text{
   text-align: center;
   color: #242424;
   font-size: 80%
+}
+#progress-box{
+  margin:0 auto;
+  margin-bottom: -80px;
+  background-color: #242424;
+  width: 70%;
+  max-width: 1000px;
+  height: 200px;
+  position: relative;
+  bottom:80px;
+  border-radius: 30px;
+  box-shadow: 2px 5px 10px 0px rgba(0,0,0,0.3);
+}
+
+#participants{
+  width:150px;
+  padding:30px;
+  margin:inherit;
+  color:white;
+}
+
+#goal{
+  width:90%;
+  margin:0;
+  position: relative;
+  top:50px;
+  font-weight:400;
+  font-size:1.4em;
+  text-align:right;
+  color:white;
+}
+
+#bar {
+  width: 85%;
+  margin:inherit;
+  background-color: white;
+  position: relative;
+  border-radius: inherit;
+  top: 70px;
+  text-align: right;
+}
+
+#progress {
+  width: 20%;
+  height: 30px;
+  border-radius: inherit;
+  background-color: #75aa19;
 }
 
 .steps{
@@ -220,10 +342,6 @@ div.icon-col{
   flex-wrap: wrap;
   padding: 0 4px;
   justify-content: center;
-}
-
-.img-column {
-  
 }
 
 .img-column img {
@@ -281,16 +399,70 @@ input:focus {
   padding:10px 50px;
 }
 
-/*-------------Content (figure, iframe, img)-------------*/
-
+/*-------Join page-------------*/
+.main-bg{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("Images/join-bg.jpeg");
+  width:100%;
+  height: 1300px;
+  padding-top: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+}
 
 /* Media Queries*/
-@media screen and (max-width: 460px) {
+
+@media screen and (max-width: 700px) {
 
   body {
     display: block;
+    min-height: 200px;
+    text-align: center;
+  }
+
+  .row-element{
+    width: 100%;
+    margin:0 auto;
+    padding:0;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .column-container {
+    width: 100%;
+  }
+
+  img.picture{
+    width:100%;
+  }
+
+  img.icon{
+   width:100%;
+  }
+
+  section{
+    width:100%;
+    display:block;
+    padding: 10px;
+  }
+
+  #image-story{
+    position:static;
+  }
+
+  header {
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 1425px) {
+
+  body {
     width:100%;
     min-height: 200px;
   }
-  
+
 }
