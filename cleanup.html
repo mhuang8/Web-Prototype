@@ -7,6 +7,7 @@
 	<title>Clean Up Australia</title>
   <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="style.css" rel="stylesheet" type="text/css" />
   <link href="navigation.css" rel="stylesheet" type="text/css" /> 
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
@@ -14,11 +15,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
 
 </head>
-<!--raffle page-->
+<!--cleanup volunteer page-->
 <body>
   <header>
     <nav>
-      <img class="logo" src="Images/logo.png">
+      <a href="index.html">
+			  <img class="logo" src="Images/logo.png">
+      </a>
       <div class ="topnav"  id="myTopnav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -52,7 +55,7 @@
           <p>Our Clean-Up events are a great way for you to volunteer and get involved. You can create or join a Clean-Up event any day of the year, and participate as an individual or a group. If you want to share your Clean-Up photos or experience, tag us using #CleanUpAustralia. Together we can make a difference!</p> 
           <h3>Join our Raffle</h3>
           <p>Our current ongoing Clean & Green Raffle event provides you the opportunity to win prizes if you participate in any of the Clean-Up events listed on this page.</p> 
-          <button>Find Out More Here</button>
+          <a href="raffle.html"><button>Find Out More Here</button></a>
         </div>
       </div>
     </section>
@@ -64,16 +67,16 @@
           <p>Take lead and organise your own Clean-Up to make a difference in your community. You can create a private Clean-Up as an individual or with a group, or start a Public Clean-Up Event for members of the community to join in. Creating a Clean-Up is perfect for friends and families who want to help out in local areas in a social, outdoor event.</p>
           <button>Register</button>
         </div>
-        <div class = "col">
-          <img src="Images/start-cleanup.png" alt="girl cleaning up" width="450px">
-        </div>
+        <figure class = "col">
+          <img class ="cleanup" src="Images/start-cleanup.png" alt="girl cleaning up" >
+        </figure>
       </div>
     </section>
     <section>
       <div class = "row-element"> 
-        <div class = "col">
-          <img src="Images/join-cleanup.png" alt="clean up volunteers" width="450px">
-        </div>
+        <figure class = "col">
+          <img class ="cleanup" src="Images/join-cleanup.png" alt="clean up volunteers" >
+        </figure>
         <div class = "col">
           <h2>Join a Clean Up</h2>
           <p>Signup for a Clean-Up already happening in your community. You can join a registered Clean-Up near you or browse across Australia. Joining an existing Clean-Up is a great opportunity to connect with fellow Australian community members who are passionate about creating change. </p> 
@@ -88,11 +91,9 @@
           <p>Mark your calendars, our annual Clean Up Australia day will be held on Sunday, 7 March 2021. We invite everyone to step up and join our largest annual community event, and help make an impact.</p> 
           <button>Pre-register</button>
         </div>
-        <div class = "col">
-          <figure>
-            <img src="Images/CUA-day.jpg" alt="clean up australia" width="500px">
-          </figure>
-        </div>
+        <figure class = "col">
+            <img class ="cleanup" src="Images/CUA-day.jpg" alt="clean up australia" >
+        </figure>
         <div>
       </div>
     </section>
@@ -100,7 +101,25 @@
  </main>
 
  <footer>
- </footer>
+    <div class="footer-col">
+      <img src="Images/logo.png" alt="logo" width="200px" >
+      <p> © 2020 Clean Up Australia <br> Privacy Policy</p>
+      <p> We are a registered charity with the ACNC.</p>
+    </div>
+    <div class="footer-col">
+      <p> Suite 701, 140 Arthur St <br>North Sydney NSW 2060</p>
+      <p>1800 CUA DAY <br> (1800 282 329) </p>
+    </div>
+    <div class="footer-col">
+      <p><strong>Follow Us</strong></p>
+      <div class ="social-icon">
+        <a href="https://www.facebook.com/cleanupaustralia" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/clean_up" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://instagram.com/cleanupaustralia"target="_blank" class="fa fa-instagram"></a>
+      </div>
+    </div>
+
+	</footer>
  <script src="script.js"></script>
 
 </body>

@@ -7,6 +7,7 @@
 	<title>Clean Up Australia</title>
   <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="style.css" rel="stylesheet" type="text/css" />
   <link href="navigation.css" rel="stylesheet" type="text/css" /> 
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
@@ -18,7 +19,9 @@
 <body>
   <header>
     <nav>
-      <img class="logo" src="Images/logo.png">
+      <a href="index.html">
+			  <img class="logo" src="Images/logo.png">
+      </a>
       <div class ="topnav"  id="myTopnav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -37,14 +40,18 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main class="join-main">
     <div class ="main-bg">
       <section>
-      <div class = "row-element"> 
-      <h1>Join Our Community</h1>
-      <p>Join us today in our mission to create a cleaner world.</p>
-      <div id ="form-box"
-        <form id="join">
+      <div class = "row-element">
+        <div id ="title">
+          <h1>Join Our Community</h1>
+          <p>Join us today in our mission to create a cleaner world.</p>
+        </div>
+      </div>
+      <div id ="form-box-join">
+        <form id ="form-join">
+          <h2>Sign Up</h2>
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required>
             
@@ -63,15 +70,15 @@
             <label for="DOB">Date of Birth</label>
             <input id="DOB" name="DOB" type="date" required>
 
-                <div class ="checkbox">
-                  <label>
-                    <input id="yes" name="yes"  type="checkbox" value="yes" required>Opt into our newsletter to keep up to date with the latest news, events and exclusive stories.
-                  </label>
-                </div>
-         
-          <button id="form-button" type="submit">Enter</button>
-        </div>
-      </form>
+              <div class ="checkbox">
+                <label>
+                  <input id="yes" name="yes"  type="checkbox" value="yes" required>Opt into our newsletter to keep up to date with the latest news, events and exclusive stories.
+                </label>
+              </div>
+            <div id ="button-contain">
+              <button id="form-button" type="submit">Join Now</button>
+            </div>
+        </form>
       </div>
     </section>
 
@@ -79,7 +86,25 @@
   </main>
 
  <footer>
- </footer>
+    <div class="footer-col">
+      <img src="Images/logo.png" alt="logo" width="200px" >
+      <p> © 2020 Clean Up Australia <br> Privacy Policy</p>
+      <p> We are a registered charity with the ACNC.</p>
+    </div>
+    <div class="footer-col">
+      <p> Suite 701, 140 Arthur St <br>North Sydney NSW 2060</p>
+      <p>1800 CUA DAY <br> (1800 282 329) </p>
+    </div>
+    <div class="footer-col">
+      <p><strong>Follow Us</strong></p>
+      <div class ="social-icon">
+        <a href="https://www.facebook.com/cleanupaustralia" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/clean_up" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://instagram.com/cleanupaustralia"target="_blank" class="fa fa-instagram"></a>
+      </div>
+    </div>
+
+	</footer>
  <script src="script.js"></script>
 
 </body>

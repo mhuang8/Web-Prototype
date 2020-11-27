@@ -7,6 +7,7 @@
 	<title>Clean Up Australia</title>
   <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="style.css" rel="stylesheet" type="text/css" />
   <link href="navigation.css" rel="stylesheet" type="text/css" /> 
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
@@ -19,7 +20,9 @@
 <body>
   <header>
     <nav>
-      <img class="logo" src="Images/logo.png">
+      <a href="index.html">
+			  <img class="logo" src="Images/logo.png">
+      </a>
       <div class ="topnav"  id="myTopnav">
         <a href="index.html">Home</a>
         <a class="active" href="about.html">About</a>
@@ -61,7 +64,7 @@
     <section id="waste">
       <div class = "row-element">
         <div class = "col">
-          <img src="Images/waste.jpg" alt="waste on beach" width="500px">
+          <img class ="abt" src="Images/waste.jpg" alt="waste on beach">
         </div>
         <div class = "col">
           <h2>Australia's Waste Problem</h2>
@@ -82,7 +85,7 @@
           <p>This simple idea ignited an enthusiasm and desire among the local community to get involved and make a difference. If a capital city could be mobilised into action, then so could the whole nation! And so it was that Clean Up Australia Day was born in 1990.</p>
         </div>
         <div class = "col">
-            <img id ="image-story" src="Images/story.jpg" alt="Founder Ian Kernan and children cleaning up" width="480px">
+            <img class ="abt" id ="image-story" src="Images/story.jpg" alt="Founder Ian Kernan and children cleaning up" >
         </div>
         <div class = "text-middle">
           <p>Of course, Australia's waste challenges can't be solved in just one day, so over the past three decades, Clean Up Australia has evolved into an organisation that works with community, government and businesses to clean up and provide practical solutions to help us all live more sustainably every day of the year. Our story will continue to grow with your help and support - join us and be a part of the journey.</p>
@@ -91,17 +94,17 @@
         <div class = "full-col">
           <div class = "icon-row">
             <div class = "icon-col2">
-              <img src="Images/icon5.png" alt="icon, cleaning" width="180px">
+              <img class ="icon"src="Images/icon5.png" alt="icon, cleaning" width="180px">
               <h3>18.3+</h3>
               <p>Australians have donated their time as part of Clean Up Australia activities over the last 30 years.</p>
             </div>
             <div class = "icon-col2">
-              <img src="Images/icon6.png" alt="icon, plant and clock" width="180px">
+              <img class ="icon"src="Images/icon6.png" alt="icon, plant and clock" width="180px">
               <h3>36 million hours</h3>
               <p>Of volunteer time has been donated to Clean-Up activities to benefit our environment.</p>
             </div>
             <div class = "icon-col2">
-              <img src="Images/icon7.png" alt="icon, rubbish truck" width="180px">
+              <img class ="icon"src="Images/icon7.png" alt="icon, rubbish truck" width="180px">
               <h3>380 000+</h3>
               <p>Ute loads of rubbish have been removed as part of Clean Up Australia activities.</p>
             </div>
@@ -116,16 +119,33 @@
         <div class = "full-col">
           <h2>Follow Our Journey</h2>
           <p>Sign up today to follow our journey and keep up to date with the latest news and events. Join other Australians in stepping up to support our cause.</p>
-          <button>Join Now</button>
+          <a href="join.html"><button>Join Now</button></a>
         <div class = "full-col">
       <div class = "row-element"> 
     </section>
-  
 
   </main>
 
 	<!-- FOOTER -->
 	<footer>
+    <div class="footer-col">
+      <img src="Images/logo.png" alt="logo" width="200px" >
+      <p> © 2020 Clean Up Australia <br> Privacy Policy</p>
+      <p> We are a registered charity with the ACNC.</p>
+    </div>
+    <div class="footer-col">
+      <p> Suite 701, 140 Arthur St <br>North Sydney NSW 2060</p>
+      <p>1800 CUA DAY <br> (1800 282 329) </p>
+    </div>
+    <div class="footer-col">
+      <p><strong>Follow Us</strong></p>
+      <div class ="social-icon">
+        <a href="https://www.facebook.com/cleanupaustralia" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/clean_up" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://instagram.com/cleanupaustralia"target="_blank" class="fa fa-instagram"></a>
+      </div>
+    </div>
+
 	</footer>
 	<script src="script.js">
 	</script>

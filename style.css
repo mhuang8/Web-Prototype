@@ -1,5 +1,10 @@
-
 /*--------------Base Styles--------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
 	scroll-behavior: smooth;
 	font-size: 100%;
@@ -21,6 +26,10 @@ body {
   "main"
   "footer"; */
 }
+ol{
+  padding-left:50px;
+}
+
 
 
 /*--------------Typography--------------*/
@@ -29,16 +38,19 @@ h1 {
   font-weight: 700;
   line-height: 1.7em;
   font-size: 3.7em;
+  padding:30px 0px;
 }
 
 h2 {
   font-weight: 700;
   font-size: 2.4em;
+  padding: 20px 0px;
 }
 
 h3{
   font-weight: 600;
   font-size: 1.5em;
+  padding: 15px 0px;
  
 }
 
@@ -47,6 +59,7 @@ p {
   font-size: 1.2em;
   font-weight: 300;
   line-height:1.5em;
+  padding: 10px 0px;
 }
 
 button {
@@ -78,16 +91,15 @@ a{
   height: auto;
   padding-top: 200px;
   padding-bottom:120px;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: static;
+  position: relative;
 }
 
 .hero-text {
   color: white;
-  padding: 0px 150px;
+  padding: 0px 100px;
   text-shadow: 2px 2px 15px rgb(85, 85, 85);
 }
 
@@ -96,18 +108,24 @@ a{
  font-size: 1.3em;
 }
 
+section.hero{
+  padding:0px;
+}
+
 .hero-text button {
  border: none;
  display: inline-block;
  margin-top: 10px;
  padding: 20px 30px;
  cursor: pointer;
- background-color: white;
  color: #242424;
+ background-color: white;
  border-radius: 30px;
 }
 
+
 .hero-text button:hover {
+  border:none;
   background-color: #242424;
   color: white;
 }
@@ -121,18 +139,24 @@ section:nth-of-type(2n){
   background: #f0f0f0;
 }
 
+section:nth-of-type(2n) button:hover{
+  background-color: #f0f0f0;
+}
 button{
   cursor: pointer;
-  border: none;
+  border: 3px solid #242424;
   border-radius: 30px;
   background-color: #242424;
   color: white;
   padding: 20px 30px;
   margin: 10px 0px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover{
-  
+  border: 3px solid #242424;
+  background-color: white;
+  color: #242424;
 }
 
 img.picture{
@@ -165,8 +189,9 @@ iframe{
   
 }
 .full-col{
-  margin: 0px 50px;
-  width:90%;
+  margin: 0px auto;
+  padding: 0px 50px;
+  width:100%;
   vertical-align: top;
 }
 
@@ -177,20 +202,35 @@ figure.col{
 /*---help----*/
 #icon-container{
   padding:0 50px; 
+  margin: 0 auto;
 }
 
 .icon-col{
   display: inline-block;
   vertical-align: top;
-  width: 18%;
-  padding: 0px 32px;
+  width: 24%;
+  padding: 20px 32px;
+  padding-bottom: 0px;
 }
 
 .column-container{
-  width:500px;
+  width:47%;
   display: inline-block;
   padding:0 50px; 
 }
+
+/*----image fade when hovered over---*/
+.picture.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity .5s ease;
+  backface-visibility: hidden;
+}
+.picture.image:hover {
+  opacity: 0.5;
+}
+
 
 /*--------------About page--------------*/
 #hero-about{
@@ -211,30 +251,31 @@ figure.col{
 }
 
 .icon-row{
-  display: flex;
-  justify-content: center;
+  width:100%;
+  margin:0 auto;
+  text-align:center;
 }
 
 .text-middle{
   text-align: center;
   margin: 20px 200px;
   height:100%;
-  
-  
 }
 
 .icon-col2{
   display: inline-block;
   vertical-align: top;
-  width: 30%;
+  width: 27%;
   padding: 0 32px;
 }
 
-#image-story{ 
+img.abt{
   vertical-align: center;
-  width:100%;
- 
-  }
+  width:500px;
+}
+#image-story{
+  padding-top:100px;
+}
 
 /*--------------clean page--------------*/
 #hero-clean{
@@ -252,6 +293,11 @@ figure.col{
   text-align: center;
   color: white;
   font-size: 80%
+}
+
+img.cleanup{
+  width:450px;
+  vertical-align: center;
 }
 /*--------------raffle page--------------*/
 #hero-raffle{
@@ -307,7 +353,7 @@ figure.col{
   background-color: white;
   position: relative;
   border-radius: inherit;
-  top: 70px;
+  top: 40px;
   text-align: right;
 }
 
@@ -318,13 +364,19 @@ figure.col{
   background-color: #75aa19;
 }
 
-.steps{
-  float: none;
+#prize-img{
+  width:100%;
+  max-width:900px;
+  margin: 0 auto;
+  text-align: center;
+ 
 }
+#prize-img img {width:50%; }
 
 #button-row{
-  width:510px;
+  width:100%;
   margin: 0 auto;
+  text-align:center;
 }
 
 #button-wrap{
@@ -333,8 +385,8 @@ figure.col{
 
 .button-element{
   margin: 0 10px;
-  width: 230px;
-  height: 100px;
+  width: 100%;
+  height: 80px;
 }
 
 .img-grid {
@@ -349,11 +401,24 @@ figure.col{
   vertical-align: middle;
 }
 
+.container {
+  display: inline-block;
+  text-align: center;
+  
+}
+.text{
+  width:280px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  padding: 20px 10px;
+  border-radius: 15px;
+}
+
 /*--form--*/
 label {
   display:block;
   margin-top: 10px;
-  font-size: 1.12em; 
+  font-size: 1.2em; 
   font-weight:400;
   color: #242424;
 }
@@ -364,12 +429,14 @@ label {
   font-weight: 200;
 }
 
+
 .description{
   font-size: 0.9em;
-  color: #464646;
+  color: #505050;
 }
 
 textarea{
+  padding:15px;
   margin-top: 10px;
 }
 ::placeholder{
@@ -378,11 +445,18 @@ textarea{
 
 .consent{
   display: inline-block;
+  margin: 10px;
 }
 
 input {
   margin: 4px 0px;
-  
+
+}
+
+#enter input{
+  width:95%;
+  padding:15px;
+  margin-bottom: 10px;
 }
 
 input:focus {
@@ -390,20 +464,43 @@ input:focus {
 }
 
 #form-button{
-  padding: 20px 60px;
+  padding: 30px 100px;
+  margin: 30px 0px;
+}
+#form-button:hover{
+  background-color:white;
 }
 
 #form-box{
-  background-color: white;
-  border-radius: 20px;
-  padding:10px 50px;
+  background-color: rgb(255,255,255,0.95);
+  box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.1);
+  border-radius: 30px;
+  padding: 10px 70px;
+  margin:0 auto;
 }
+
+#form-box h3{
+  font-size: 1.7em;
+  margin-top: 40px;
+  
+}
+
+label #cb1{
+  width:5%;
+  margin:10px 0px;
+}
+
+textarea{
+  width:100%;
+  font-size: 0.9em;
+}
+
 
 /*-------Join page-------------*/
 .main-bg{
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("Images/join-bg.jpeg");
   width:100%;
-  height: 1300px;
+  height: 100%;
   padding-top: 50px;
   background-position: center;
   background-repeat: no-repeat;
@@ -411,51 +508,191 @@ input:focus {
   position: static;
 }
 
+.row-element #title{
+  color:white;
+  text-align:center;
+}
+#title h1{margin-bottom:0;}
+#title p{font-size:1.4em; margin-top:0;}
+
+#form-box-join{
+  background-color: rgb(255,255,255,0.95);
+  box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.1);
+  border-radius: 30px;
+  padding:30px 50px;
+  width:60%;
+  margin:0 auto;
+  margin-top:50px;
+  
+}
+#form-join{
+  width:90%;
+  margin:0 auto;
+}
+#form-join input{
+  width:100%;
+  padding:15px;
+  margin-bottom: 10px;
+}
+label #yes{
+  width:5%;
+  margin:10px 0px;
+}
+
+#form-button{
+  font-size: 1.5em;
+  
+}
+#button-contain{
+  width:100%;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+
+
+
+
+/*----footer------*/
+footer{
+  display:flex;
+  justify-content: center;
+}
+.footer-col{
+  display: inline-block;
+  vertical-align: top;
+  padding:35px;
+  width:25%;
+  font-size: 80%;
+  
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+  color: #242424;
+}
+
 /* Media Queries*/
 
 @media screen and (max-width: 700px) {
-
+  html{
+    width:100%;
+  }
+  
   body {
     display: block;
     min-height: 200px;
     text-align: center;
+    padding:0px;
   }
 
+  .hero-image{
+    width:100%;
+    margin:0px;
+  }
+
+  .hero-text{
+    width:100%;
+    padding:0px;
+
+  }
   .row-element{
     width: 100%;
     margin:0 auto;
     padding:0;
+    text-align:center;
   }
 
-  .col {
+  .col, 
+  .text-middle {
     width: 100%;
+    margin:5px;
   }
 
-  .column-container {
-    width: 100%;
-  }
-
-  img.picture{
+  .column-container{
     width:100%;
+    padding:0px;
   }
 
-  img.icon{
-   width:100%;
-  }
+  iframe{ width:100%;}
+
+  img.picture {width:100%;}
+  img.icon{width:100%;}
+  img.abt{width:100%;}
+  img.cleanup{width:100%;}
+
 
   section{
     width:100%;
     display:block;
-    padding: 10px;
+    padding: 30px 25px;
   }
 
   #image-story{
     position:static;
+    padding:0;
   }
 
   header {
     width:100%;
   }
+
+  footer{
+    display:block;
+    width:100%;
+  }
+
+  div.footer-col{
+    width:100%;
+  }
+
+  #button-wrap{
+    padding: 10px 0px;
+  }
+  .button-element{
+    width:100%;
+    display:block;
+  }
+  #icon-container, 
+  .icon-col,
+  .icon-row,
+  .icon-col2{
+    width:100%;
+    padding:0px;
+  }
+
+  div.icon-col2{
+    display:block;
+  }
+
+  .full-col{
+    display: block;
+    margin:0 auto;
+    padding:0px;
+    width:100%;
+  }
+
+  #form-box-join,
+  #form-box{
+    width:100%;
+    padding:10px;
+  }
+  #form-button{
+    width:100%;
+  }
+
 }
 
 @media screen and (max-width: 1425px) {

@@ -7,6 +7,7 @@
 	<title>Clean Up Australia</title>
 	<link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<link href="navigation.css" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
@@ -21,19 +22,22 @@
 	<header>
 		<!--nav referenced from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp-->
 		<nav>
-			<img class="logo" src="Images/logo.png">
+      <a href="index.html">
+			  <img class="logo" src="Images/logo.png">
+      </a>
       <div class ="topnav"  id="myTopnav">
         <a class="active" href="index.html">Home</a>
         <a href="about.html">About</a>
         <div class="dropdown">
           <button class="dropbtn">Clean Up</button>
+          
           <div class="dropdown-content">
             <a href="cleanup.html">Participate in a Clean Up</a>
             <a href="raffle.html">Clean & Green Raffle</a>
           </div>
         </div>
         <div class="nav-button">
-        <a href="join.html">Join</a>
+          <a href="join.html">Join</a>
           <!--<button class="nav-button"><a href="join.html">Join</a></button>-->
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
@@ -42,13 +46,13 @@
   </header>
 
   <main>
-    <div class="hero-image">
-      <div class="hero-text">
-        <h1>Help Make Australia Beautiful Again</h1>
-        <p>Together, we can clean up Australia.</p>
-        <button>Start A Clean-Up</button>
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>Help Make Australia Beautiful Again</h1>
+          <p>Together, we can clean up Australia.</p>
+          <a href="cleanup.html"><button>Start A Clean-Up</button> </a>
+        </div>
       </div>
-    </div>
   
     <section id="mission">
       <div class = "row-element"> 
@@ -58,7 +62,7 @@
         <div class ="col">
           <h2>Our Mission</h2>
           <p>Our mission is to inspire and empower communities to reduce the environmental impacts of waste in Australia, and contribute to a cleaner, greener world. We motivate and provide opportunities for Australians to clean up, reduce waste, and conserve our precious environment.</p>
-          <button><a href="about.html">Learn More</a></button>
+          <a href="about.html"><button>Learn More</button></a>
       <div class = "row-element"> 
     </section>
 
@@ -94,12 +98,16 @@
       <div class = "row-element"> 
         <div class = "column-container">
           <h2>Clean-Up Events</h2>
-          <img class ="picture" src="Images/cleanup.png" alt="cleanup group">
+          <figure>
+            <a href="cleanup.html"><img class ="picture image" src="Images/cleanup.png" alt="cleanup group"></a>
+          </figure>
           <h3>Participate in a Clean-Up</h3>
           <p>Want to get involved and volunteer around your local area? Start or join a Clean-Up today! You can participate in a Clean-Up any day of the year. You can also register for Clean Up Australia Day 2021.</p>
         </div>
         <div class = "column-container">
-          <img class ="picture" src="Images/raffle2.png" alt="raffle illustration">
+          <figure>
+            <a href="raffle.html"><img class ="picture image" src="Images/raffle2.png" alt="raffle illustration"></a>
+          </figure>
           <h3>Featured: Clean & Green Raffle</h3>
           <p>Join our Clean & Green Raffle by participating in any Clean-Up for a chance to win some amazing prizes, while enjoying the fresh outdoors air! Event is open until March 2021.</p>
         </div>
@@ -111,11 +119,11 @@
         <div class = "col">
           <h2>Join Our Community</h2>
           <p>Sign up today and join other Australians in the journey to making Australia a cleaner place.</p>
-          <button>Join Now</button>
+          <a href="join.html"><button>Join Now</button></a>
         </div>
-        <div class = "col">
+        <figure class = "col">
           <img class ="picture" src="Images/community.jpg" alt="volunteer community" >
-        </div>
+        </figure>
       <div class = "row-element"> 
     </section>
   
@@ -123,6 +131,23 @@
 
 	<!-- FOOTER -->
 	<footer>
+    <div class="footer-col">
+      <img src="Images/logo.png" alt="logo" width="200px" >
+      <p> © 2020 Clean Up Australia <br> Privacy Policy</p>
+      <p> We are a registered charity with the ACNC.</p>
+    </div>
+    <div class="footer-col">
+      <p> Suite 701, 140 Arthur St <br>North Sydney NSW 2060</p>
+      <p>1800 CUA DAY <br> (1800 282 329) </p>
+    </div>
+    <div class="footer-col">
+      <p><strong>Follow Us</strong></p>
+      <div class ="social-icon">
+        <a href="https://www.facebook.com/cleanupaustralia" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/clean_up" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://instagram.com/cleanupaustralia"target="_blank" class="fa fa-instagram"></a>
+      </div>
+    </div>
 
 	</footer>
 	<script src="script.js">
